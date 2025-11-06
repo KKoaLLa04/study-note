@@ -1,3 +1,9 @@
 #Đây là thư mục học tập của Duy Kiên (note những gì mình học được và có những khóa học nào)
 
 - Thư mục nhật ký : ghi lại quá trình hằng ngày (quá trình diễn ra, tiếp thu được gì)
+
+1. Nhập môn lập trình code không code: Reading
+2. Việt nam văn hóa và du lịch: Reading
+
+3. Cách thiết kế database
+    Studying: https://www.youtube.com/watch?v=c06YfX7jBOM&t=667s (6/11/2025 )
