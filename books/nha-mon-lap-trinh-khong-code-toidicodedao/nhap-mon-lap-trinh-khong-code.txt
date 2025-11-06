@@ -1,0 +1,19 @@
+
+
+I) Lưu ý
+1. Có nhiều cơ hội onsite tại nước ngoài
+
+II) Vấn đề đang gặp phải:
+- Không có lộ trình bài bản 
+    + Roadmap chatgpt đề xuất:
+    1️⃣ HTML, CSS, JS
+    2️⃣ TypeScript
+    3️⃣ React hoặc Angular
+    4️⃣ NodeJS (Express/NestJS)
+    5️⃣ SQL / MongoDB
+    6️⃣ Git & GitHub
+    7️⃣ Docker + CI/CD
+    8️⃣ Làm project thực tế
+- Không biết học tập và tìm kiếm tài liệu ở đâu
+
+- 11/6/2025: trang 19
