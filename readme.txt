@@ -7,7 +7,6 @@ I) Các đầu sách
 2. Việt nam văn hóa và du lịch: Reading
 3. Tôi tự học: Reading 
     - Ngày 9/11/2025: trang 25
-    - Ngày 11/11/2025: 
 
 II)
 1. Cách thiết kế database
