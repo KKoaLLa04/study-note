@@ -7,6 +7,8 @@ I) Các đầu sách
 2. Việt nam văn hóa và du lịch: Reading
 3. Tôi tự học: Reading 
     - Ngày 9/11/2025: trang 25
+    - Ngày 16/11/2025: trang 43 (ý chính: Tự học cần có óc chuyên sâu, tuyển chọn chủ đề học và tập trung tinh thần
+    lực vào những gì mình đang học. Thiên tài là những người biết kiên trì)
 
 II)
 1. Cách thiết kế database
