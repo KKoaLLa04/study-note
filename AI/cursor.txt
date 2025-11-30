@@ -1,0 +1,332 @@
+Promt cách dùng cursor
+
+1) Chat về dự án – hiểu toàn bộ code
+
+Gõ:
+Hãy đọc toàn bộ project và tóm tắt các module, API, cấu trúc thư mục, và công nghệ đang dùng.
+
+
+Cursor sẽ hiểu toàn bộ codebase (AI-aware).
+
+2) Viết code mới – sinh file tự động
+Tạo cho tôi 1 file Angular service: documentReadingService.ts
+Chứa các API: createDocument, listDocuments, updateDocument, deleteDocument.
+Sử dụng HttpClient.
+
+3) Sửa code trong file hiện tại
+
+Mở 1 file → Bôi đoạn code → Cmd + K
+Tối ưu hàm này và fix lỗi không gửi đúng file trong FormData.
+
+4) Tự động fix bug (điểm mạnh nhất của Cursor)
+
+Trong lỗi console bạn copy vào:
+
+input.focus is not a function in primeng MultiSelect
+
+
+Cursor sẽ mở đúng file → highlight → sửa.
+
+4. Dùng Cursor đúng cách để tăng tốc dự án 5–10×
+✔ A. “High-level Ask” (để AI hiểu toàn cảnh dự án)
+
+Ví dụ:
+
+Dự án của tôi dùng Angular 17 + PrimeNG 17.
+Task: Tạo module Upload tài liệu, gồm form upload + validate + gọi API.
+Hãy đề xuất cấu trúc:
+- component
+- service
+- validator
+- model
+- UI design
+
+
+AI sẽ generate toàn bộ kế hoạch.
+
+✔ B. “Low-level Apply” (AI mở file + sửa trực tiếp)
+
+Ví dụ:
+
+Tối ưu hàm
+
+Tìm lỗi
+
+Refactor
+
+Sửa typo
+
+Convert code
+
+✔ C. “Files mode” — Cho AI xem nhiều file và làm việc cùng lúc
+
+Nút ở trên chat: “Files”
+
+Bạn gõ:
+
+Hãy phân tích 3 file sau:
+- upload.component.ts
+- upload.service.ts
+- api.ts
+
+Và đề xuất cách sửa lại để gửi file đúng dạng multipart/form-data.
+
+
+➡ Cursor đọc cả 3 file cùng lúc → trả lời cực chính xác.
+
+✔ C. “Files mode” — Cho AI xem nhiều file và làm việc cùng lúc
+
+Nút ở trên chat: “Files”
+
+Bạn gõ:
+
+Hãy phân tích 3 file sau:
+- upload.component.ts
+- upload.service.ts
+- api.ts
+
+Và đề xuất cách sửa lại để gửi file đúng dạng multipart/form-data.
+
+
+➡ Cursor đọc cả 3 file cùng lúc → trả lời cực chính xác.
+
+📚 5. Lộ trình học Cursor từ A → Z (nhanh – thực dụng)
+Day 1 — Làm quen
+
+Cài đặt
+
+Dùng Cmd+L và Cmd+K
+
+Thử tạo 1 file demo
+
+Nhờ AI refactor 1 file hiện có
+
+Day 2 — Viết code thực
+
+Tạo 1 module (CRUD)
+
+Viết UI + service
+
+Nhờ AI viết unit test
+
+Day 3 — Fix bug với Cursor
+
+Copy lỗi từ console → để Cursor fix
+
+Cho AI review toàn bộ repo
+
+Dùng “Files mode”
+
+Day 4 — Advanced
+
+Cho AI scan toàn repo
+
+Thiết kế kiến trúc dự án
+
+Tự động phân tích style code / rule
+
+🧩 6. Các prompt MẪU để dùng Cursor cực hiệu quả
+1. Prompt viết component Angular
+Tạo 1 Angular component tên document-upload:
+- dùng ReactiveForm
+- gồm: title, topics, file upload
+- validate đầy đủ
+- method submit() gọi API createDocument()
+
+2. Prompt sửa bug
+Đây là lỗi: input.focus is not a function.
+Hãy tìm trong toàn bộ codebase nơi MultiSelect đang dùng sai input element.
+Tự mở file và fix giúp tôi.
+
+3. Prompt refactor
+Refactor file này theo clean code:
+- tách nhỏ hàm
+- loại bỏ code lặp
+- dùng interface thay vì any
+- giữ nguyên logic
+
+4. Prompt tạo API service
+Tạo một service Angular tên DocumentService gồm các hàm:
+- list()
+- create(formData)
+- update(formData)
+- delete(id)
+
+* PROMT CHUẨN DÀNH RIÊNG CHO ANGULAR (BY: CURSOR)
+PHẦN 1: Chuẩn bị trước khi dùng Cursor
+
+Cài đặt Cursor và mở dự án Angular trong workspace Cursor.
+
+Cấu trúc dự án Angular nên rõ ràng:
+
+src/
+ └─ app/
+     └─ modules/
+         └─ your-module/
+             ├─ components/
+             ├─ services/
+             ├─ models/
+
+
+Cài đặt PrimeNG / Angular Forms / HttpClientModule nếu module cần UI hoặc API.
+
+Tạo file trống cho module bạn sẽ build:
+
+document-upload.component.ts
+
+document-upload.component.html
+
+document-upload.service.ts
+
+document.model.ts
+
+PHẦN 2: Flow dùng Cursor để hoàn thành 1 module trong 1 giờ
+Step 1: Tạo module + component
+
+Prompt Cursor:
+
+Tạo module Angular tên DocumentModule và component DocumentUploadComponent:
+- Sử dụng ReactiveFormsModule
+- Component gồm form với các field: title (string), topics (array), file (file upload)
+- Tạo file HTML template với PrimeNG MultiSelect cho topics, input type=file cho file
+- Tạo các validator: required cho title, topics, và required file nếu displayType = 1
+
+
+Cursor sẽ tự động tạo file .ts, .html, .scss nếu cần.
+
+Step 2: Tạo Model
+
+Prompt Cursor:
+
+Tạo file document.model.ts:
+- interface Document { avatar?: string; title: string; type: number; topics: string[]; file?: File; content_html?: string }
+
+
+Cursor sinh interface chuẩn, import dễ dàng trong component và service.
+
+Step 3: Tạo Service API
+
+Prompt Cursor:
+
+Tạo DocumentUploadService:
+- Hàm createDocument(formData: FormData)
+- Hàm updateDocument(formData: FormData)
+- Hàm listDocuments(): Observable<Document[]>
+- Hàm deleteDocument(id: number)
+- Sử dụng HttpClient
+- Tự động handle baseUrl từ environment
+
+
+Step 4: Bind Form + Submit
+
+Prompt Cursor:
+
+Trong component DocumentUploadComponent:
+- Tạo FormGroup với fields: title, topics, file
+- Nếu displayType = 1 thì file bắt buộc
+- Tạo hàm submit() để:
+   1. Validate form
+   2. Chuyển dataUpload sang FormData:
+      - file gửi riêng
+      - các field khác stringify nếu cần
+   3. Gọi service createDocument/updateDocument
+   4. Hiển thị thông báo thành công/fail
+- Dùng PrimeNG MessageService để show notification
+
+Step 5: HTML Template
+
+Prompt Cursor:
+
+Tạo file document-upload.component.html:
+- Input text cho title
+- MultiSelect cho topics
+- Input type=file cho file
+- Button Submit
+- Hiển thị validation message nếu form invalid
+- Sử dụng styleClass is-invalid nếu form control invalid
+
+Step 6: Tích hợp và Test
+
+Prompt Cursor:
+
+Tích hợp component DocumentUploadComponent vào module DocumentModule
+- Import ReactiveFormsModule, FormsModule, HttpClientModule, PrimeNG MultiSelect, Button, MessageModule
+- Viết unit test cơ bản kiểm tra form validation
+- Thêm mock data cho topics
+
+Step 7: Sửa bug + tối ưu
+
+Prompt Cursor:
+
+Tối ưu code component:
+- Xử lý FormData đúng với file upload
+- Sửa lỗi input.focus is not a function khi dùng MultiSelect
+- Refactor hàm submit() để clean code
+
+PHẦN 3: Bộ Prompt Angular chuyên dụng
+
+Dưới đây là bộ prompt chuẩn để bạn copy-paste cho Cursor:
+
+Tạo module + component:
+
+Tạo Angular module [TênModule] và component [TênComponent]:
+- ReactiveFormsModule
+- HTML template với PrimeNG MultiSelect, file input, và text input
+- Validator: required cho title, topics, file nếu displayType=1
+
+
+Tạo model:
+
+Tạo interface [ModelName] trong file [model.ts]:
+- Các trường: avatar?: string, title: string, type: number, topics: string[], file?: File, content_html?: string
+
+
+Tạo service API:
+
+Tạo service [ServiceName]:
+- Hàm create(formData: FormData)
+- Hàm update(formData: FormData)
+- Hàm list(): Observable<[ModelName][]>
+- Hàm delete(id: number)
+- Sử dụng HttpClient và environment.baseUrl
+
+
+Bind form + submit:
+
+Trong component [TênComponent]:
+- Tạo FormGroup với fields: title, topics, file
+- Validate form
+- Chuyển dataUpload sang FormData: file gửi riêng, các field khác stringify
+- Gọi service create/update
+- Hiển thị notification thành công/fail bằng MessageService
+
+
+HTML Template:
+
+Tạo HTML template:
+- Input text cho title
+- MultiSelect PrimeNG cho topics
+- Input type=file cho file
+- Button Submit
+- Hiển thị validation message
+
+
+Test + Debug + Optimize:
+
+- Viết unit test cho form validation
+- Mock topics
+- Sửa lỗi input.focus is not a function
+- Refactor submit() để clean code
+
+
+🎯 Flow dùng Cursor trong 1 giờ
+Thời gian	Task
+0-10’	Tạo module + component + model
+10-20’	Tạo service API
+20-35’	Bind form + submit + FormData
+35-50’	Tạo HTML template + validation messages
+50-60’	Test, debug, optimize với Cursor
+
+Mình có thể viết luôn một bộ prompt chi tiết từng bước cho module Upload Document, bạn copy vào Cursor là AI sinh cả component + service + model + template + form validation + file upload + API call.
+
+Bạn có muốn mình viết bộ prompt sẵn đó luôn không?
